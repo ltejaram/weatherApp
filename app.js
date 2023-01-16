@@ -26,8 +26,9 @@ app.post("/",function(req,res){
         })
     })
 })
-app.listen(3000|| process.env.PORT,function(req,res){
-    console.log("server is started in port 3000");
+let port = 3000|| process.env.PORT;
+app.listen(port,function(req,res){
+    console.log("server is started in port "+port.toString());
 })
 /*let query="london"
     let url="https://api.openweathermap.org/data/2.5/weather?appid=8dfb3722299eafcde6c82bc3bb8c4657&units=metric&q="+query;
